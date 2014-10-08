@@ -8,8 +8,10 @@ apt-get -y install zip unzip emacs git
 
 # R
 # http://cran.r-project.org/bin/linux/ubuntu/
-echo "deb http://cran.case.edu/bin/linux/ubuntu precise/" >> /etc/apt/sources.list
+echo "deb http://cran.case.edu/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get update
 apt-get -y install r-base r-base-dev
 
+# Python
+apt-get -y install python3 python3-pip
