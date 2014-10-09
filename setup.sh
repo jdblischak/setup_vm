@@ -35,3 +35,11 @@ cd -
 # Python
 apt-get -y install python3 python3-pip
 pip3 install -r requirements.txt
+
+# Subread
+# http://bioinf.wehi.edu.au/subread-package/
+cd /tmp
+wget http://sourceforge.net/projects/subread/files/subread-1.4.5-p1/subread-1.4.5-p1-Linux-x86_64.tar.gz
+tar -xzf subread-1.4.5-p1-Linux-x86_64.tar.gz
+mv subread-1.4.5-p1-Linux-x86_64/bin/* /usr/local/bin/
+cd -
