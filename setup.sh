@@ -24,6 +24,7 @@ apt-get -y install gdebi-core libapparmor1
 cd /tmp
 wget http://download2.rstudio.org/rstudio-server-0.98.1062-amd64.deb
 gdebi -n rstudio-server-0.98.1062-amd64.deb
+cd -
 
 # Python
 apt-get -y install python3 python3-pip
