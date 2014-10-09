@@ -12,6 +12,10 @@ echo "deb http://cran.case.edu/bin/linux/ubuntu trusty/" >> /etc/apt/sources.lis
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get update
 apt-get -y install r-base r-base-dev
+# curl-config needed for installing RCurl, a dependency of devtools
+# http://www.omegahat.org/RCurl/FAQ.html
+apt-get -y install libcurl4-openssl-dev
+Rscript install_r_cran.R
 
 # RStudio
 # http://www.rstudio.com/products/rstudio/download-server/
