@@ -15,7 +15,13 @@ apt-get -y install r-base r-base-dev
 # curl-config needed for installing RCurl, a dependency of devtools
 # http://www.omegahat.org/RCurl/FAQ.html
 apt-get -y install libcurl4-openssl-dev
+# xml2-config needed to install XML, which is needed for many
+# Bioconductor packages
+apt-get -y install libxml2-dev
+# CRAN
 Rscript install_r_cran.R
+# Bioconductor
+Rscript install_r_bioconductor.R
 
 # RStudio
 # http://www.rstudio.com/products/rstudio/download-server/
