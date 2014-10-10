@@ -33,7 +33,7 @@ gdebi -n rstudio-server-0.98.1062-amd64.deb
 cd -
 
 # Python
-apt-get -y install python3 python3-pip
+apt-get -y install python3 python3-pip ipython3
 pip3 install -r requirements.txt
 
 # Subread
