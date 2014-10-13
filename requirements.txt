@@ -1,3 +1,5 @@
 snakemake
 numpy
 pandas
+pysam
+biopython
