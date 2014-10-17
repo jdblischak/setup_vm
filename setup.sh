@@ -43,3 +43,6 @@ wget http://sourceforge.net/projects/subread/files/subread-1.4.5-p1/subread-1.4.
 tar -xzf subread-1.4.5-p1-Linux-x86_64.tar.gz
 mv subread-1.4.5-p1-Linux-x86_64/bin/* /usr/local/bin/
 cd -
+
+# Torque for grid computing
+sudo apt-get -y install torque-server torque-client torque-mom
